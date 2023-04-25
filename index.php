@@ -42,20 +42,23 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a>
+                        <li class="nav-item active px-2">
+                            <a class="nav-link" href="#">Giảm giá</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">On Sale</a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Iphone <i class="fas fa-chevron-down"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Category <i class="fas fa-chevron-down"></i></a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Samsung <i class="fas fa-chevron-down"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Xiaomi <i class="fas fa-chevron-down"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Coming Soon</a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Phụ kiện <i class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Tin tức</a>
                         </li>
                     </ul>
                     <form action="#" class="font-size-14 font-rale">
@@ -96,12 +99,96 @@
                 <h4 class="font-text font-size-20">Top Sale</h4>
                 <hr>
                 <!-- owl -->
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme">                   
                     <div class="item py-2">
                         <div class="product font-rale">
-                            <a href="#"><img src="./assets/products/ssgzf4.png" alt="product1"></a>
+                            <a href="#"><img src="./assets/products/ip14pm.png" alt="product"></a>
                             <div class="text-center">
-                                <h6>Samsung Galaxy Z Fold4</h6>
+                                <h6>iPhone 14 Pro Max 1TB</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">41.790.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">45.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>              
+
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ip13pm.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>iPhone 13 Pro Max 256GB</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">27.290.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">31.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ip12.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>iPhone 12 256GB</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">16.990.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">23.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ip11.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>iPhone 11 128GB</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">11.990.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">13.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ssgzf4.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Samsung Galaxy Z Fold4 256G</h6>
                                 <div class="price py-2">
                                     <span style="color:red" class="px-2">33.760.000 ₫</span>
                                     <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">40.990.000 ₫</span> 
@@ -111,11 +198,159 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
-                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
                                 </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
                             </div>
                         </div>
                     </div>
+
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/s23u.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Samsung Galaxy S23 Ultra</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">37.190.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">44.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ssgs22u.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Samsung Galaxy S22 Ultra</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">36.990.000 ₫</span>
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ssgs20.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Samsung Galaxy S20 FE 256GB</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">8.200.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">12.490.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/x13p.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Xiaomi 13 Pro 12GB 256GB</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">23.490.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">29.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/x11tp.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Xiaomi 11T Pro</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">11.990.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">14.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/xm10tp.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Xiaomi Mi 10T Pro 5G</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">11.200.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">12.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ra1.png" alt="product"></a>
+                            <div class="text-center">
+                                <h6>Redmi A1</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">1.840.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">2.190.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div> -->
+
                 </div>
             </div>
         </section>
