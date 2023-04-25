@@ -1,0 +1,58 @@
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-text {
+    font-family: "Raleway", cursive;
+}
+
+:root {
+    --color-first: #003859;
+}
+:root {
+    --color-second: #00A5C4;
+}
+
+.color-first {
+    color: var(--color-first);
+}
+
+.color-second {
+    color: var(--color-second);
+}
+
+.color-yellow {
+    color: #FFD289;
+}
+
+.color-first-bg {
+    background-color: var(--color-first);
+}
+
+.color-second-bg {
+    background-color: var(--color-second);
+}
+
+.remove-underline {
+    text-decoration:none;
+}
+
+.remove-underline:hover {
+    text-decoration:underline;
+}
+
+.p1 {
+    margin: 0;
+}
