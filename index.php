@@ -43,13 +43,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Products</a>
+                            <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">On Sale</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Category</a>
+                            <a class="nav-link" href="#">Category <i class="fas fa-chevron-down"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
@@ -90,6 +90,36 @@
                 </div>
             </div>
         </section>
+        <!-- top sale -->
+        <section id="top-sale">
+            <div class="container py-5">
+                <h4 class="font-text font-size-20">Top Sale</h4>
+                <hr>
+                <!-- owl -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ssgzf4.png" alt="product1"></a>
+                            <div class="text-center">
+                                <h6>Samsung Galaxy Z Fold4</h6>
+                                <div class="price py-2">
+                                    <span style="color:red" class="px-2">33.760.000 ₫</span>
+                                    <span style="color:gray" class="px-2 font-size-14 text-decoration-line-through">40.990.000 ₫</span> 
+                                </div>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- js -->
