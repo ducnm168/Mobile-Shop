@@ -30,8 +30,7 @@
         <div class="strip d-flex justify-content-between px-4 py-1">
             <p class="font-text font-size-12 text-black-50 p1">Hà Nội: 347 Đội Cấn | 244A Lạc Long Quân</p>
             <div class="font-text font-size-14 ">
-                <a href="#" class="px-3 border-right border-left text-dark remove-underline">Login</a>
-                <a href="#" class="px-3 border-right text-dark remove-underline">Whishlist (0)</a>
+                <a href="#" class="px-3 border-right border-left text-dark remove-underline">Đăng nhập</a>
             </div>
         </div>
 
@@ -258,7 +257,7 @@
                 </div>
 
                 <div class="grid">
-                    <div class="grid-item Apple border" style="width: 250px;">
+                    <div class="grid-item Apple card" style="width: 250px;">
                         <div class="item py-2 text-center">
                             <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ip14pm.png" alt="product" style="width: 200px;"></a>
@@ -281,7 +280,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Samsung border" style="width: 250px;">
+                    <div class="grid-item Samsung card" style="width: 250px;">
                         <div class="item py-2 text-center">
                             <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ssgzf4.png" alt="product" style="width: 200px;"></a>
@@ -304,7 +303,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Xiaomi border" style="width: 250px;">
+                    <div class="grid-item Xiaomi card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/x13p.png" alt="product" style="width: 200px;"></a>
@@ -327,7 +326,7 @@
                         </div>
                     </div>
                     
-                    <div class="grid-item Apple border" style="width: 250px;">
+                    <div class="grid-item Apple card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ip13pm.png" alt="product" style="width: 200px;"></a>
@@ -350,7 +349,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Samsung border" style="width: 250px;">
+                    <div class="grid-item Samsung card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/s23u.png" alt="product" style="width: 200px;"></a>
@@ -373,7 +372,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Xiaomi border" style="width: 250px;">
+                    <div class="grid-item Xiaomi card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/x11tp.png" alt="product" style="width: 200px;"></a>
@@ -396,7 +395,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Apple border" style="width: 250px;">
+                    <div class="grid-item Apple card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ip12.png" alt="product" style="width: 200px;"></a>
@@ -419,7 +418,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Samsung border" style="width: 250px;">
+                    <div class="grid-item Samsung card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ssgs22u.png" alt="product" style="width: 200px;"></a>
@@ -441,7 +440,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Xiaomi border" style="width: 250px;">
+                    <div class="grid-item Xiaomi card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/xm10tp.png" alt="product" style="width: 200px;"></a>
@@ -464,7 +463,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Apple border" style="width: 250px;">
+                    <div class="grid-item Apple card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ip11.png" alt="product" style="width: 200px;"></a>
@@ -487,7 +486,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Samsung border" style="width: 250px;">
+                    <div class="grid-item Samsung card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ssgs20.png" alt="product" style="width: 200px;"></a>
@@ -510,7 +509,7 @@
                         </div>
                     </div>
 
-                    <div class="grid-item Xiaomi border" style="width: 250px;">
+                    <div class="grid-item Xiaomi card" style="width: 250px;">
                         <div class="item py-2 text-center">
                         <div class="product font-rale">
                             <a href="#"><img src="./assets/products/ra1.png" alt="product" style="width: 200px;"></a>
@@ -534,6 +533,14 @@
                     </div>
 
                 </div>
+            </div>
+        </section>
+        
+        <!-- banner ads -->
+        <section id="banner_ads">
+            <div class="container py-5 text-center">
+                <img src="./assets/banner-ads1.jpg" alt="bannerads1" height="200px" class=""img-fluid>
+                <img src="./assets/banner-ads2.jpg" alt="bannerads2" height="200px" class=""img-fluid>
             </div>
         </section>
 
