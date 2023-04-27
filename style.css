@@ -14,9 +14,9 @@
     font-size: 20px;
 }
 
-.font-text {
-    font-family: "Raleway", cursive;
-}
+/* .font-text {
+    font-family:  ;
+} */
 
 :root {
     --color-first: #991111;
@@ -97,4 +97,9 @@
     color: #d81616;
     margin-right: -4rem;
     padding: 0 1rem;
+}
+
+#products .grid .grid-item {
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
 }
