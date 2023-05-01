@@ -81,7 +81,7 @@
                     <img src="./assets/banner3.png" alt="Banner4">
                 </div>
                 <div class="item">
-                    <video width="100%" playsinline autoplay controls>
+                    <video width="100%" loop autoplay muted>
                     <source src="./assets/banner4.mp4" type="video/mp4">
                     </video>
                 </div>
