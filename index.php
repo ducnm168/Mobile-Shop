@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
     <!-- start header -->
     <header class="header">
 
@@ -57,7 +56,7 @@
                         </li>
                     </ul>
                     <form action="#" class="font-size-14 font-rale">
-                        <a href="cart.php" class="py-2 rounded-pill color-first-bg remove-underline">
+                        <a href="cart.php" class="py-2 rounded-pill color-first-bg remove-underline1">
                             <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
                             <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
                         </a>
@@ -88,6 +87,7 @@
                 </div>
             </div>
         </section>
+
         <!-- top sale -->
         <section id="top-sale">
             <div class="container py-5">
@@ -111,7 +111,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                     </div>              
@@ -132,7 +132,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                     </div>
@@ -236,15 +236,15 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <hr>
             </div>
         </section>
+
         <!-- products -->
         <section id="products">
             <div class="container">
@@ -274,7 +274,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                           </div>  
                         </div>
@@ -297,7 +297,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                             </div>
                         </div>
@@ -320,7 +320,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -343,7 +343,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -366,7 +366,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -389,7 +389,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -412,7 +412,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -434,7 +434,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -457,7 +457,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -480,7 +480,7 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -503,7 +503,7 @@
                                     <span><i class="far fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -526,7 +526,7 @@
                                     <span><i class="far fa-star"></i></span>
                                     <span><i class="far fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Add to Cart</button>
+                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
                             </div>
                         </div>
                         </div>
@@ -535,7 +535,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- banner ads -->
         <section id="banner_ads">
             <div class="container py-5 text-center">
@@ -544,7 +544,99 @@
             </div>
         </section>
 
+        <!-- blogs -->
+        <section id="blogs">
+            <div class="container">
+                <h4 class="font-text font-size-20"><b>TIN TỨC</b></h4>
+                <hr>
+                <div class="row py-1">
+                    <div class="col-3 enlarge">
+                        <div class="card px-2 py-2">
+                            <a href="#" class="remove-underline"><img src="./assets/ip15-blogs.jpeg" class="img-fluid rounded" alt="blogs">
+                            <b class="text-of">iPhone 15 Pro, iPhone 15 Pro Max hỗ trợ Thunderbolt 3 qua USB-C</b></a>
+                        </div>
+                    </div>
+
+                    <div class="col-3 enlarge">
+                        <div class="card px-2 py-2">
+                            <a href="#" class="remove-underline"><img src="./assets/rn12-blogs.jpeg" class="img-fluid rounded" alt="blogs">
+                            <b class="text-of">Redmi Note 12R Pro lộ cấu hình chi tiết với chip SD4 Gen 1, màn hình 120Hz, camera kép 48MP</b></a>
+                        </div>
+                    </div>
+                
+                    <div class="col-3 enlarge">
+                        <div class="card px-2 py-2">
+                            <a href="#" class="remove-underline"><img src="./assets/nokia-blogs.jpeg" class="img-fluid rounded" alt="blogs">
+                            <b class="text-of">Rò rỉ thông tin smartphone Nokia có thiết kế bền bỉ, cấu hình “chất”</b></a>
+                        </div>
+                    </div>
+
+                    <div class="col-3 enlarge">
+                        <div class="card px-2 py-2">
+                            <a href="#" class="remove-underline"><img src="./assets/ip15inc-blogs.jpeg" class="img-fluid rounded" alt="blogs">
+                            <b class="text-of">Giá dòng iPhone 15 Pro có thể tăng 20%</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- footer -->
+    <footer id="footer" class="bg-dark text-white py-3 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h6>Tổng đài hỗ trợ miễn phí</h4>
+                    <ul>
+                        <li>Gọi mua hàng <b>1800.2097</b> (7h30 - 22h00)</li>
+                        <li>Gọi khiếu nại <b>1800.2063</b> (8h00 - 21h30)</li>
+                        <li>Gọi bảo hành <b>1800.2064</b> (8h00 - 21h00)</li>
+                    </ul>
+                    <h6>Phương thức thanh toán</h6>
+                    <ul class="d-flex">
+                        <li class="rounded mx-1"><img src="./assets/pay-logo2.png" width="48px" height="29px" alt="pay"></li>
+                        <li class="rounded mx-1"><img src="./assets/pay-logo1.png" width="48px" height="29px" alt="pay"></li>
+                        <li class="rounded mx-1"><img src="./assets/pay-logo3.png" width="48px" height="29px" alt="pay"></li>
+                        <li class="rounded mx-1"><img src="./assets/pay-logo4.png" width="48px" height="29px" alt="pay"></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h6>Thông tin và chính sách</h6>
+                    <ul>
+                        <li>Mua hàng và thanh toán Online</li>
+                        <li>Mua hàng trả góp Online</li>
+                        <li>Thông tin hoá đơn mua hàng</li>
+                        <li>Trung tâm bảo hành chính hãng</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6>Dịch vụ và thông tin khác</h6>
+                    <ul>
+                        <li>Ưu đãi thanh toán</li>
+                        <li>Chính sách Bảo hành</li>
+                        <li>Tuyển dụng</li>
+                        <li>Dịch vụ bảo hành điện thoại</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h6>Kết nối với chúng tôi</h6>
+                    <div class="d-flex">
+                        <img src="./assets/yt-logo.png" class="rounded mx-1" width="44px" height="32px" alt="pay">
+                        <img src="./assets/fb-logo.png" class="rounded mx-1" width="44px" height="32px" alt="pay">
+                        <img src="./assets/ins-logo.png" class="rounded mx-1" width="44px" height="32px" alt="pay">
+                        <img src="./assets/tiktok-logo.png" class="rounded mx-1" width="44px" height="32px" alt="pay">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
 
     <!-- js -->
     <script src="./index.js"></script>

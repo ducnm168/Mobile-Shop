@@ -1,3 +1,7 @@
+* {
+    box-sizing:border-box;
+}
+
 .font-size-12 {
     font-size: 12px;
 }
@@ -47,6 +51,11 @@
 
 .remove-underline {
     text-decoration:none;
+    color: black;
+}
+
+.remove-underline1 {
+    text-decoration:none;
 }
 
 .remove-underline:hover {
@@ -61,7 +70,7 @@
     overflow: hidden;
 }
 
-#top-sale .owl-carousel .item .product img {
+#top-sale .owl-carousel .item .product img, .enlarge {
     padding: 5px;
     margin-bottom: 10px;
     transition: transform .5s ease;
@@ -69,6 +78,10 @@
 
 #top-sale .owl-carousel .item .product img:hover {
     transform: scale(1.1);
+}
+
+.enlarge:hover {
+    transform: scale(1.05);
 }
 
 #top-sale .owl-carousel .owl-nav button {
@@ -102,4 +115,16 @@
 #products .grid .grid-item {
     margin-top: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.text-of {
+    display: -webkit-box;
+    max-width: 288px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#footer ul {
+    list-style: none;
 }
