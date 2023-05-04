@@ -125,6 +125,19 @@
     overflow: hidden;
 }
 
-#footer ul {
+ul {
     list-style: none;
+}
+
+.child li:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+.child {
+    padding: 0;
+}
+
+.child li p, .child li div {
+    padding: 10px;
+    margin: 0px;
 }
