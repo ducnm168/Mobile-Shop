@@ -1,23 +1,35 @@
+        <?php
+            $item_id = $_GET['item_id'];
+            foreach ($product->getData() as $item):
+                if($item['item_id']==$item_id):
+        ?>
+        
         <!-- products -->
         <section id="products" class="py-3">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
                         <div class="text-center">
-                            <img src="./assets/products/ip14pm.png" alt="p" class="img-fluid">
+                            <img src="<?php echo $item['item_image']; ?>" alt="p" class="img-fluid">
                         </div>
                         <div class="form-row pt-4 font-size-16 d-flex">
                             <div class="col mx-1">
                                 <button type="submit" class="btn btn-danger form-control">Mua ngay</button>
                             </div>
                             <div class="col mx-1">
-                                <button type="submit" class="btn btn-warning form-control">Thêm vào giỏ</button>
+                                <?php 
+                                    if(in_array($item['item_id'],$Cart->getCardId($product->getData('cart')) ?? [])){
+                                        echo '<button type="submit" name="top_sale_submit" disabled class="btn btn-success my-1 font-size-16 form-control">Trong giỏ hàng</button>';
+                                    }else{
+                                        echo '<button type="submit" name="top_sale_submit" class="btn btn-danger my-1 font-size-16 form-control">Thêm vào giỏ</button>';
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <h5 class="font-size-20">iPhone 14 Pro Max</h5>
-                        <small>by Apple</small>
+                        <h5 class="font-size-20"><?php echo $item['item_name']; ?></h5>
+                        <small>by <?php echo $item['item_brand']; ?></small>
                         <div class="d-flex">
                             <div class="rating text-warning font-size-12">
                                 <span><i class="fas fa-star"></i></span>
@@ -28,8 +40,8 @@
                             </div>
                         </div>
                         <hr>
-                        <span style="color:red" class="font-size-20"><b>41.790.000 ₫</b></span>
-                        <span style="color:gray" class="font-size-14 text-decoration-line-through">45.990.000 ₫</span>
+                        <span style="color:red" class="font-size-20"><b><?php echo number_format( $item["item_last_price"], 0, '', '.' ); ?></b></span>
+                        <span style="color:gray" class="font-size-14 text-decoration-line-through"><?php echo number_format( $item["item_price"], 0, '', '.' ); ?></span>
                         <hr>
                         <div class="color">
                             <h6>Chọn màu:</h6>
@@ -158,3 +170,8 @@
                 
             </div>
         </section>
+
+        <?php
+            endif;
+            endforeach;
+        ?>

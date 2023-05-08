@@ -92,16 +92,6 @@ INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `register_date`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wishlist`
---
-
-CREATE TABLE `wishlist` (
-  `cart_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `item_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
 -- Indexes for dumped tables
 --
 

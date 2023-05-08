@@ -1,5 +1,13 @@
         <?php
-            $product_shuffle = $product->getData();
+            shuffle($product_shuffle);
+
+            //request method post
+            if($_SERVER['REQUEST_METHOD'] == "POST"){
+                if(isset($_POST['top_sale_submit'])){
+                    // call method add to cart
+                    $Cart->addToCart($_POST['user_id'],$_POST['item_id']);
+                }
+            }
         ?>
         <!-- top sale -->
         <section id="top-sale">
@@ -12,7 +20,7 @@
                         if($item["item_last_price"] > 20000000){?>
                     <div class="item py-2">
                         <div class="product font-rale">
-                            <a href="#"><img src="<?php echo $item["item_image"]; ?>" alt="product"></a>
+                            <a href="<?php printf('%s?item_id=%s','product.php',$item["item_id"]); ?>"><img src="<?php echo $item["item_image"]; ?>" alt="product"></a>
                             <div class="text-center">
                                 <h6><?php echo $item["item_name"]; ?></h6>
                                 <div class="price py-2">
@@ -26,7 +34,17 @@
                                     <span><i class="fas fa-star"></i></span>
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
-                                <button type="submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>
+                                <form method="post">
+                                    <input type="hidden" name="user_id" value="1">
+                                    <input type="hidden" name="item_id" value="<?php echo $item['item_id']; ?>">
+                                    <?php 
+                                        if(in_array($item['item_id'],$Cart->getCardId($product->getData('cart')) ?? [])){
+                                            echo '<button type="submit" name="top_sale_submit" disabled class="btn btn-success my-1 font-size-12">Trong giỏ hàng</button>';
+                                        }else{
+                                            echo '<button type="submit" name="top_sale_submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>';
+                                        }
+                                    ?>
+                                </form>
                             </div>
                         </div>
                     </div>              

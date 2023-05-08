@@ -1,11 +1,13 @@
 <?php
+    ob_start();
     // include header
     include("header.php");
 ?>
 
 <?php
     // include cart
-    include("Template/cart-template.php");
+    count($product->getData('cart')) ? include("Template/cart-template.php") : include("Template/notFound/cart_not_found.php") 
+    
 ?>
 
 <?php

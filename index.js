@@ -42,26 +42,72 @@ $(document).ready(function () {
     // product qty section
     let $qty_up = $(".qty .qty-up");
     let $qty_down = $(".qty .qty-down");
+    let $deal_price = $("#deal-price");
     // let $input = $(".qty .qty-input");
 
     // click on qty up button
     $qty_up.click(function(e){
+        
         let $input = $(`.qty-input[data-id='${$(this).data("id")}']`);
-        if($input.val() >= 1){
-            $input.val(function(i,oldval){
-                return ++oldval;
-            })
-        }
-    })
+        let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
+
+        // change product price using ajax call
+        $.ajax({url: "Template/ajax.php",type: "post",data:{itemid:$(this).data("id")},success:function(result){
+            let obj = JSON.parse(result);
+            let item_price = obj[0]['item_last_price'];
+
+            if($input.val() >= 1 && $input.val() <= 9){
+                $input.val(function(i,oldval){
+                    return ++oldval;
+                });
+                // increase price of the product
+                var price = parseInt(item_price * $input.val());
+                var formattedPrice = price.toLocaleString('vi-VN', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0,
+                  });
+                $price.text(formattedPrice);
+    
+                // set subtotal price
+                var subtotal = parseInt($deal_price.text()) + parseInt(item_price);
+                $deal_price.text(subtotal);
+            }
+
+            
+        }}); // closing ajax request
+    });
 
     // click on qty down button
     $qty_down.click(function(e){
+
         let $input = $(`.qty-input[data-id='${$(this).data("id")}']`);
-        if($input.val() >= 2){
-            $input.val(function(i,oldval){
-                return --oldval;
-            })
-        }
-    })
+        let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
+
+        // change product price using ajax call
+        $.ajax({url: "template/ajax.php",type: "post",data:{itemid:$(this).data("id")},success:function(result){
+            let obj = JSON.parse(result);
+            let item_price = obj[0]['item_last_price'];
+
+            if($input.val() > 1 && $input.val() <= 10){
+                $input.val(function(i,oldval){
+                    return --oldval;
+                });
+                // increase price of the product
+                var price = parseInt(item_price * $input.val());
+                var formattedPrice = price.toLocaleString('vi-VN', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0,
+                  });
+                $price.text(formattedPrice);
+    
+                // set subtotal price
+                var subtotal = parseInt($deal_price.text()) - parseInt(item_price);
+                $deal_price.text(subtotal);
+            }
+
+
+        }}); // closing ajax request
+
+    });
 
 });
