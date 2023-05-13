@@ -73,7 +73,6 @@ $(document).ready(function () {
                 $deal_price.text(subtotal);
             }
 
-            
         }}); // closing ajax request
     });
 

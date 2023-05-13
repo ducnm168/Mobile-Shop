@@ -76,24 +76,45 @@ INSERT INTO `product` (`item_id`, `item_brand`, `item_name`,`item_last_price`, `
 
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
-  `first_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  `register_date` datetime DEFAULT NULL
+  `email` varchar(100) NOT NULL,
+  `full_name` varchar(50) NOT NULL,
+  `phone_number` varchar(10) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `password` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `register_date`) VALUES
-(1, 'Duc', 'Nguyen', '2023-05-05 13:07:17'),
-(2, 'Lam', 'Hoai', '2023-05-05 13:07:17');
+INSERT INTO `user` (`user_id`,`email`, `full_name`,`phone_number`,`address`,`password`) VALUES
+(1,'ductiny2003@gmail.com','Nguyen Minh Duc','0944882003','Số 1 ngõ 240 Âu Cơ, Quảng An, Tây Hồ, HN','hoiji123'),
+(2,'vuonghoailam@gmail.com','Vuong Hoai Lam','0912345678','Long Biên, HN','123');
 
 -- --------------------------------------------------------
+
+
+CREATE TABLE `payment` (
+    `payment_id`  int(11) NOT NULL,
+  	`cart_id` int(11) NOT NULL,
+    `cus_name` varchar(30) NOT NULL,
+    `cus_number` varchar(10) NOT NULL,
+    `cus_address` varchar(255) NOT NULL,
+    `cus_city` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `payment`
+  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT;
+
 
 --
 -- Indexes for dumped tables
 --
+
+CREATE TABLE `admin` (
+  `username` varchar(20) NOT NULL,
+  `password` varchar(16) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`username`);
+
 
 --
 -- Indexes for table `cart`
@@ -101,6 +122,9 @@ INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `register_date`) VALUE
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`cart_id`);
 
+
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`payment_id`);
 --
 -- Indexes for table `product`
 --

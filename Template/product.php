@@ -19,9 +19,9 @@
                             <div class="col mx-1">
                                 <?php 
                                     if(in_array($item['item_id'],$Cart->getCardId($product->getData('cart')) ?? [])){
-                                        echo '<button type="submit" name="top_sale_submit" disabled class="btn btn-success my-1 font-size-16 form-control">Trong giỏ hàng</button>';
+                                        echo '<button type="submit" name="top_sale_submit" disabled class="btn btn-success font-size-16 form-control">Trong giỏ hàng</button>';
                                     }else{
-                                        echo '<button type="submit" name="top_sale_submit" class="btn btn-danger my-1 font-size-16 form-control">Thêm vào giỏ</button>';
+                                        echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-16 form-control">Thêm vào giỏ</button>';
                                     }
                                 ?>
                             </div>
@@ -102,7 +102,7 @@
                         </ul>
                         </div>
                         <div class="mt-3"><b>iPhone 14 Pro Max</b> là mẫu flagship nổi bật nhất của Apple trong lần trở lại năm 2022 với nhiều cải tiến về công nghệ cũng như vẻ ngoài cao cấp, sang chảnh hợp với gu thẩm mỹ đại chúng. Những chiếc điện thoại đến từ nhà Táo Khuyết nhận được rất nhiều sự kỳ vọng của thị trường ngay từ khi chưa ra mắt.</div>
-                        <div class="mt-3">Kích thước<b>màn hình iPhone 14 Pro Max</b> vẫn là 6.7 inch tuy nhiên phần “tai thỏ” đã được thay thế bằng một đường cắt hình viên thuốc. Apple gọi đây là <b>Dynamic Island</b> - nơi chứa camera Face ID và một đường cắt hình tròn thứ hai cho camera trước.</div>
+                        <div class="mt-3">Kích thước <b>màn hình iPhone 14 Pro Max</b> vẫn là 6.7 inch tuy nhiên phần “tai thỏ” đã được thay thế bằng một đường cắt hình viên thuốc. Apple gọi đây là <b>Dynamic Island</b> - nơi chứa camera Face ID và một đường cắt hình tròn thứ hai cho camera trước.</div>
                         <div class="mt-3">Ngoài ra, <b>iPhone 14 Pro Max</b> có tính năng màn hình <b>luôn bật hoạt động</b> (Always-on Display) với tiện ích màn hình khóa mới trên iOS 16. Người dùng có thể xem các thông tin như lời nhắc, sự kiện lịch và thời tiết mà không cần bật máy lên để xem. Thậm chí, có một trạng thái ngủ cho hình nền, trạng thái này sẽ làm tối hình nền để sử dụng ít pin hơn.</div>
                         <div class="mt-3"><b>iPhone 14 Pro Max được trang bị bộ vi xử lý Apple A16 Bionic</b>. Apple đã tập trung vào hiệu quả sử dụng năng lượng, màn hình và camera với con chip mới của mình. CPU sáu nhân bao gồm hai nhân hiệu suất cao sử dụng năng lượng thấp hơn 20% và bốn nhân tiết kiệm pin chỉ sử dụng một phần ba năng lượng so với chip của các đối thủ cạnh tranh.</div>
                         <img src="./assets/banner-product.png" class="img-fluid rounded mt-5" alt="banner">

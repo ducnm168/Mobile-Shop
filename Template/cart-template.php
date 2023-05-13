@@ -50,7 +50,6 @@
                             <div class="col-2">
                                 <div class="font-size-20 text-danger">
                                     <span style="color:red" data-id="<?php echo $item['item_id'] ?? '0' ?>" class="product_price"><?php echo number_format( $item["item_last_price"], 0, '', '.' );?></span><span style="color:red"> ₫</span>
-                                    <span style="color:gray" class="cost font-size-14 text-decoration-line-through"><?php echo number_format( $item["item_price"], 0, '', '.' );?></span><span class="font-size-14" style="color:gray"> ₫</span>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +63,7 @@
                     <div class="col-3">
                         <div class="sub-total border rounded text-center mt-2 p-3">
                             <h5 class="font-size-20">Tổng tiền tạm tính: <span style="color:red" id="deal-price"><?php echo isset($subTotal) ? $Cart->getSum($subTotal):0 ?></span><span style="color:red" class="font-size-20"> ₫</span></h5>
-                            <button type="submit" class="btn btn-danger mt-3">TIẾN HÀNH ĐẶT HÀNG</button>
+                            <a href="payment.php"><button type="submit" class="btn btn-danger mt-3">TIẾN HÀNH ĐẶT HÀNG</button></a>
                         </div>
                     </div>
                 </div>

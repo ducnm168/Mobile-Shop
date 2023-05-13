@@ -30,13 +30,11 @@
 
 <body>
     <!-- start header -->
-    <header class="header">
+    <header id="header">
 
-        <div class="strip d-flex justify-content-between px-4 py-1">
+        <div class="strip px-4 py-1 d-flex justify-content-between">
             <p class="font-text font-size-12 text-black-50 p1">Hà Nội: 347 Đội Cấn | 244A Lạc Long Quân</p>
-            <div class="font-text font-size-14 ">
-                <a href="#" class="px-3 border-right border-left text-dark remove-underline">Đăng nhập</a>
-            </div>
+            <a href="login.php" class="font-text font-size-14 p1 px-5 remove-underline">Đăng nhập</a>
         </div>
 
         <!-- nav -->
@@ -49,16 +47,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item active px-2">
-                            <a class="nav-link" href="#">Giảm giá</a>
+                            <a class="nav-link" href="#top-sale">HOT SALE</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Điện thoại <i class="fas fa-chevron-down"></i></a>
+                            <a class="nav-link" href="#products">Điện thoại <i class="fas fa-chevron-down"></i></a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Phụ kiện <i class="fas fa-chevron-down"></i></a>
+                            <a class="nav-link" href="#blogs">Tin tức</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Tin tức</a>
+                            <a class="nav-link" href="#">Sắp ra mắt</a>
                         </li>
                     </ul>
                     <form action="#" class="font-size-14 font-rale">

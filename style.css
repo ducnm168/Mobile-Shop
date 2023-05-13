@@ -141,3 +141,20 @@ ul {
     padding: 10px;
     margin: 0px;
 }
+ .form-row {
+    padding: 4px ;
+ }
+
+ .form-row label {
+    min-width: 120px;
+}
+
+.form-row input {
+    padding: 4px;
+    flex: 0.75;
+}
+
+.align-right {
+    text-align: right;
+}
+
