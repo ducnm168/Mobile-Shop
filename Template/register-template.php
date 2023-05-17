@@ -1,4 +1,5 @@
-<?
+<?php
+
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         if(isset($_POST["submit"])){
             $email = $_POST["email"];
@@ -7,15 +8,13 @@
             $address = $_POST["address"];
             $password = $_POST["password"];
             $confirmpassword = $_POST["confirmpassword"];
-            $duplicate = $db->con->query("SELECT * FROM `user` WHERE email = '$email'");
+            $duplicate = mysqli_query($db->con, "SELECT * FROM `user` WHERE email = '$email'");
             if(mysqli_num_rows($duplicate) > 0){
-              echo
-              "<script> alert('Email đã được đăng ký trước đó!'); </script>";
+                echo "<script> alert('Email đã được đăng ký trước đó!'); </script>";
             } else{
                 if($password == $confirmpassword){
-                  $query = "INSERT INTO `user` (`email`, `full_name`,`phone_number`,`address`,`password`)
-                  VALUES('$email','$name','$phone','$address','$password')";
-                  $db->con->query($query);
+                  $query = "INSERT INTO `user`(`email`, `full_name`,`phone_number`,`address`,`password`) VALUES('$email','$name','$phone','$address','$password')";
+                  mysqli_query($db->con, $query);
                   echo
                   "<script> alert('Đăng ký thành công!'); </script>";
                 }
@@ -23,7 +22,7 @@
                   echo
                   "<script> alert('Mật khẩu không khớp!'); </script>";
                 }
-              }
+            }
         }
     }
 ?>
@@ -59,7 +58,7 @@
                     <input class="form-input card" style="width:100%" type="password" name="confirmpassword" id="confirmpassword" required>
                 </div>
                 <div class="col-12 form-row">
-                    <input class="form-input card" style="padding: 5px 200px; margin: 2px 5px; background-color:#d81616; color:white" type="submit" value="Đăng ký">
+                    <input class="card" style="padding: 5px 200px; margin: 2px 5px; background-color:#d81616; color:white" type="submit" name="submit" value="Đăng ký">
                 </div>
             </form>
     </div>

@@ -1,7 +1,7 @@
         <?php
             if($_SERVER['REQUEST_METHOD'] == "POST"){
                 if(isset($_POST['delete-cart-submit'])){
-                    $deleterecord = $Cart->deleteCart($_POST['item_id']);
+                    $deleterecord = $Cart->deleteCart($_POST['item_id'],$_SESSION["user_id"]);
                 }
             }
         ?>
@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="col-9">
                         <?php
-                        foreach($product->getData('cart') as $item):
+                        foreach($product->getCartData($_SESSION["user_id"]) as $item):
                         $cart = $product->getProduct($item['item_id']);
                         $subTotal[] = array_map(function($item){
                         ?>

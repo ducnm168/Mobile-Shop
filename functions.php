@@ -9,6 +9,7 @@ require("database/Product.php");
 //require Cart Class
 require("database/Cart.php");
 
+
 // DBController Object
 $db = new DBController();
 

@@ -5,7 +5,7 @@
 ?>
 
 <?php
-    // include login
+    // include register
     include("Template/register-template.php");
 ?>
 

@@ -29,6 +29,5 @@ class DBController
             $this->con = null;
         }
     }
-
 }
 

@@ -6,7 +6,7 @@
 
 <?php
     // include cart
-    count($product->getData('cart')) ? include("Template/cart-template.php") : include("Template/notFound/cart_not_found.php") 
+    count($product->getCartData($_SESSION["user_id"])) ? include("Template/cart-template.php") : include("Template/notFound/cart_not_found.php") 
     
 ?>
 

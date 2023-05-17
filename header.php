@@ -1,3 +1,8 @@
+<?php 
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +39,15 @@
 
         <div class="strip px-4 py-1 d-flex justify-content-between">
             <p class="font-text font-size-12 text-black-50 p1">Hà Nội: 347 Đội Cấn | 244A Lạc Long Quân</p>
-            <a href="login.php" class="font-text font-size-14 p1 px-5 remove-underline">Đăng nhập</a>
+            <div>
+                <?php if(!isset($_SESSION["login"])){?>
+                    <a href="login.php" class="font-text font-size-14 p1 px-5 remove-underline">Đăng nhập</a>
+                    <?php } ?>
+                    <?php if(isset($_SESSION["login"])){?>
+                        <a href="index.php" class="font-text font-size-14 p1 remove-underline"><?php echo $_SESSION["email"]?></a>
+                        <span><a href="logout.php" class="font-text font-size-14 remove-underline text-danger">, Đăng xuất</a></span>
+                        <?php } ?>
+             </div>
         </div>
 
         <!-- nav -->
@@ -47,23 +60,31 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item active px-2">
-                            <a class="nav-link" href="#top-sale">HOT SALE</a>
+                            <a class="nav-link" href="http://localhost/codecuaduc/project2/#top-sale">HOT SALE</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#products">Điện thoại <i class="fas fa-chevron-down"></i></a>
+                            <a class="nav-link" href="http://localhost/codecuaduc/project2/#products">Điện thoại <i class="fas fa-chevron-down"></i></a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#blogs">Tin tức</a>
+                            <a class="nav-link" href="http://localhost/codecuaduc/project2/#blogs">Tin tức</a>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link" href="#">Sắp ra mắt</a>
                         </li>
                     </ul>
                     <form action="#" class="font-size-14 font-rale">
-                        <a href="cart.php" class="py-2 rounded-pill color-first-bg remove-underline1">
-                            <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-                            <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getData('cart')); ?></span>
-                        </a>
+                        <?php if(!isset($_SESSION["login"])){?>
+                            <a href="login.php" class="py-2 rounded-pill color-first-bg remove-underline1">
+                                <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                            </a>
+                        <?php } ?>
+                        <?php if(isset($_SESSION["login"])){?>
+                            <a href="cart.php" class="py-2 rounded-pill color-first-bg remove-underline1">
+                                <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                                <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getCartData($_SESSION["user_id"])); ?></span>
+                            </a>
+                        <?php } ?>
                     </form>
                 </div>
             </div>

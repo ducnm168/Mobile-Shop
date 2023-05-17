@@ -10,8 +10,11 @@
                 $Cart->addToCart($_POST['user_id'],$_POST['item_id']);
             }
         }
-
-        $in_cart = $Cart->getCardId($product->getData('cart'));
+        if(isset($_SESSION["login"])){
+            $in_cart = $Cart->getCardId($product->getCartData($_SESSION["user_id"]));
+        }else{
+            $in_cart = $Cart->getCardId($product->getData('cart'));
+        }
 
         ?>
 
@@ -48,13 +51,21 @@
                                     <span><i class="fas fa-star"></i></span>
                                 </div>
                                 <form method="post">
-                                    <input type="hidden" name="user_id" value="1">
+                                    <input type="hidden" name="user_id" value="<?php if(isset($_SESSION["login"])){echo $_SESSION["user_id"];} ?>">
                                     <input type="hidden" name="item_id" value="<?php echo $item['item_id']; ?>">
                                     <?php 
                                         if(in_array($item['item_id'],$in_cart ?? [])){
-                                            echo '<button type="submit" name="top_sale_submit" disabled class="btn btn-success my-1 font-size-12">Trong giỏ hàng</button>';
+                                            if(isset($_SESSION["login"])){
+                                                echo '<button type="submit" name="top_sale_submit" disabled class="btn btn-success my-1 font-size-12">Trong giỏ hàng</button>';
+                                            }else{
+                                                echo '<button class="btn btn-danger my-1 font-size-12"><a href="login.php" class="remove-underline1 text-white">Thêm vào giỏ</a></button>';
+                                            }
                                         }else{
-                                            echo '<button type="submit" name="top_sale_submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>';
+                                            if(isset($_SESSION["login"])){
+                                                echo '<button type="submit" name="top_sale_submit" class="btn btn-danger my-1 font-size-12">Thêm vào giỏ</button>';
+                                            }else{
+                                                echo '<button class="btn btn-danger my-1 font-size-12"><a href="login.php" class="remove-underline1 text-white">Thêm vào giỏ</a></button>';
+                                            }
                                         }
                                     ?>
                                 </form>

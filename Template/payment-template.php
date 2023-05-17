@@ -26,27 +26,23 @@
                 <h4 class="text-danger">Thông tin giao hàng :</h4>
                 <form method="post">
                     <div class="form-row d-flex">
+                        <label for="fullname">Email</label>
+                        <input class="form-input card" type="text" disabled placeholder="<?php echo $_SESSION["email"] ?>">
+                    </div>
+
+                    <div class="form-row d-flex">
                         <label for="fullname">Tên</label>
-                        <input class="form-input card" id="fullname" type="text" required placeholder="Họ và tên...">
+                        <input class="form-input card" type="text" disabled placeholder="<?php echo $_SESSION["full_name"] ?>">
                     </div>
 
                     <div class="form-row d-flex">
                         <label for="phone">Số điện thoại</label>
-                        <input class="form-input card" id="phone" type="text" required placeholder="Số điện thoại..."><br>
+                        <input class="form-input card" type="text" disabled placeholder="<?php echo $_SESSION["phone_number"] ?>"><br>
                     </div>
                     
                     <div class="form-row d-flex">
-                        <label for="city">Thành phố</label>
-                        <select class="card" name="city" id="city">
-                            <option value="HN">Hà Nội</option>
-                            <option value="HCM">Hồ Chí Minh</option>
-                            <option value="DN">Đà Nẵng</option>
-                        </select>
-                    </div>
-
-                    <div class="form-row d-flex">
-                        <label for="fullname">Địa chỉ</label>
-                        <input class="form-input card" id="address" type="text" required placeholder="Địa chỉ...">
+                        <label for="city">Địa chỉ</label>
+                        <input class="form-input card" type="text" disabled placeholder="<?php echo $_SESSION["address"] ?>"><br>
                     </div>
                 </form>
             </div>
@@ -54,7 +50,7 @@
                 <h4 class="text-danger">Thông tin đơn hàng :</h4>
                 <div class="row mt-2">
                     <?php
-                        foreach($product->getData('cart') as $item):
+                        foreach($product->getCartData($_SESSION["user_id"]) as $item):
                         $cart = $product->getProduct($item['item_id']);
                         $subTotal[] = array_map(function($item){
                         ?>
