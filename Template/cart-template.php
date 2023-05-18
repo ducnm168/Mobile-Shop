@@ -4,6 +4,17 @@
                     $deleterecord = $Cart->deleteCart($_POST['item_id'],$_SESSION["user_id"]);
                 }
             }
+
+            if($_SERVER['REQUEST_METHOD'] == "POST"){
+                if(isset($_POST["submit"])){
+                    $userid = $_SESSION["user_id"];
+                    $itemid = $item['item_id'];
+                    $quantity = $_POST['qty-input'];
+                    $query = "UPDATE `cart` SET quantity = {$quantity} WHERE user_id={$userid} AND item_id={$itemid};";
+                    mysqli_query($db->con, $query);
+                }
+            }
+
         ?>
 
         <!-- shopping cart -->
@@ -22,7 +33,6 @@
                             <div class="col-2">
                                 <img src="<?php echo $item['item_image'] ?>" style="height: 120px;" alt="cart1" class="img-fluid">
                             </div>
-
                             <div class="col-8">
                                 <h5><?php echo $item['item_name'] ?></h5>
                                 <small>by <?php echo $item['item_brand'] ?></small>
@@ -38,7 +48,7 @@
                                 <div class="qty d-flex pt-2">
                                     <div class="d-flex font-rale w-25">
                                         <button class="qty-down border bg-light" data-id="<?php echo $item['item_id'] ?? 0 ?>"><i class="fas fa-angle-down"></i></button>
-                                        <input type="text" data-id="<?php echo $item['item_id'] ?? 0 ?>" class="qty-input border text-center px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                                        <input type="text" data-id="<?php echo $item['item_id'] ?? 0 ?>" name="qty-input" id="qty-input" class="qty-input border text-center px-2 w-100 bg-light" disabled value="1" placeholder="1">
                                         <button class="qty-up border bg-light" data-id="<?php echo $item['item_id'] ?? 0 ?>"><i class="fas fa-angle-up"></i></button>
                                     </div>
                                     <form method="post">
@@ -63,7 +73,10 @@
                     <div class="col-3">
                         <div class="sub-total border rounded text-center mt-2 p-3">
                             <h5 class="font-size-20">Tổng tiền tạm tính: <span style="color:red" id="deal-price"><?php echo isset($subTotal) ? $Cart->getSum($subTotal):0 ?></span><span style="color:red" class="font-size-20"> ₫</span></h5>
-                            <a href="payment.php"><button type="submit" class="btn btn-danger mt-3">TIẾN HÀNH ĐẶT HÀNG</button></a>
+                            <form method="post" action="payment.php">
+                                <input type="hidden" data-id="<?php echo $item['item_id'] ?? 0 ?>" name="qty-input">
+                                <button type="submit" class="btn btn-danger mt-3">TIẾN HÀNH ĐẶT HÀNG</button>
+                            </form>
                         </div>
                     </div>
                 </div>
