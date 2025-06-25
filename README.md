@@ -1,2 +1,2 @@
-# Đây là dự án của nhóm mình cho môn học quản lí dự án công nghệ thông tin trên trường.
-Đây là một trang web bán quần áo cho nam được phát triển bằng PHP, bootstrap, host bằng xampp.
+# Đây là dự án của mình solo làm cho đồ án môn học ở trên trường, trang web bán điện thoại.
+Trang web được phát triển bằng PHP, bootstrap, host bằng xampp.
